@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# The media library lives at ~/karaokemp-library (override: KARAOKEMP_LIBRARY) and is
+# deliberately outside this repo — hundreds of GB of media, a SQLite index, and rclone
+# enumeration dumps have no business in version control. These patterns are belt-and-braces
+# in case someone points KARAOKEMP_LIBRARY at the source tree.
+library/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+enumerations/
+logs/
+staging/
+active/
+archive/
+artifacts/
